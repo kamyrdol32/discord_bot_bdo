@@ -20,5 +20,6 @@ W folderze stworz nowy plik o nazwie "**.env**" oraz umieść w nim:
 ```
 # .env
 DISCORD_TOKEN={twoj_token}
+DISCORD_BOSSTIMER_CHANNEL={ID kanału discord}
 ```
 
