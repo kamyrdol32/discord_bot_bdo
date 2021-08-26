@@ -10,9 +10,9 @@ Aplikacja (BOT) stworzona na potrzeby nauki Python'a
 
 ### Wykorzystane technologie:
   - **Python**:
-      - Discord.py,
-      - Asyncio,
-      - dotenv,
+      - Discord.py
+      - Asyncio
+      - dotenv
 
 # Instalacja:
 
