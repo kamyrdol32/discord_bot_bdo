@@ -4,7 +4,7 @@ import asyncio
 
 from boss import *
 
-TOKEN = 'NzA0ODUxNDI1MTQxOTgxMjU1.XqjKCw.EoYH2WRum7w0NxH0EFrV4hFQ7dg'
+TOKEN = '' # Your BOT Token here
 
 client = discord.Client()
 
