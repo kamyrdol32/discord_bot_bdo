@@ -14,7 +14,7 @@ Aplikacja (BOT) stworzona na potrzeby nauki Python'a
       - Asyncio,
       - dotenv,
 
-### Instalacja:
+# Instalacja:
 
 W folderze stworz nowy plik o nazwie "**.env**" oraz umieść w nim:
 ```
