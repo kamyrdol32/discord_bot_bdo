@@ -16,7 +16,7 @@ Aplikacja (BOT) stworzona na potrzeby nauki Python'a
 
 ### Instalacja:
 
-W folderze stworz nowy plik o nazwie ".env" oraz umieść w nim:
+W folderze stworz nowy plik o nazwie "**.env**" oraz umieść w nim:
 ```
 # .env
 DISCORD_TOKEN={twoj_token}
