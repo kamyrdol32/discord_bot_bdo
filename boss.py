@@ -95,7 +95,7 @@ async def getTimetoNextBoss(BossID):
             Boss = Data
             break
 
-    Now = datetime.now()
+    Now = datetime.utcnow()
 
     if Now.weekday() == Boss["Day"]:
         BossTime = datetime(Now.year, Now.month, Now.day, Boss["Hour"], Boss["Minute"])
