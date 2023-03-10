@@ -38,11 +38,11 @@ async def on_ready():
             print(f'{nextBoss["Name"]} to nastepny boss! Za ' + str(TimetoNext) + 'min')
 
             # Discord Avatar
-            if not avatarPath or avatarPath != '"PNG/"+ str(nextBoss["Name"]) +".png"':
-                path = "PNG/"+ str(nextBoss["Name"]) +".png"
-                file_path = open(path, 'rb')
-                avatar = file_path.read()
-                await client.user.edit(avatar=avatar)
+            # if not avatarPath or avatarPath != '"PNG/"+ str(nextBoss["Name"]) +".png"':
+            #     path = "PNG/"+ str(nextBoss["Name"]) +".png"
+            #     file_path = open(path, 'rb')
+            #     avatar = file_path.read()
+            #     await client.user.edit(avatar=avatar)
 
             # Discord Messega
             if TimetoNext == 15 and nextBoss["Notification"] == True:
