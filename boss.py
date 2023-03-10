@@ -1,4 +1,5 @@
 import datetime
+import pytz
 from datetime import *
 
 BossTable = [
@@ -73,10 +74,11 @@ BossTable = [
     {"ID": 7, "Day": 6, "Hour": 18, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
     {"ID": 8, "Day": 6, "Hour": 19, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
 ]
-
+timezone = pytz.timezone("Europe/Warsaw")
 
 async def findNextBossOnStart():
-    Now = datetime.now()
+    Now = datetime.now(tz = timezone)
+    Now = Now.replace(tzinfo=None)
     for Data in BossTable:
 
         # Dziś
@@ -95,7 +97,8 @@ async def getTimetoNextBoss(BossID):
             Boss = Data
             break
 
-    Now = datetime.utcnow()
+    Now = datetime.now(tz = timezone)
+    Now = Now.replace(tzinfo=None)
 
     if Now.weekday() == Boss["Day"]:
         BossTime = datetime(Now.year, Now.month, Now.day, Boss["Hour"], Boss["Minute"])
@@ -103,6 +106,9 @@ async def getTimetoNextBoss(BossID):
     else:
         BossTime = datetime(Now.year, Now.month, Now.day, Boss["Hour"], Boss["Minute"]) + timedelta(days=1)
         #print("Jutro")
+
+    print("Teraz: " + str(Now))
+    print("Boss: " + str(BossTime))
 
     TimeToBoss = BossTime - Now
     TimeToBoss_Minutes = int(divmod(TimeToBoss.total_seconds(), 60)[0] + 1)

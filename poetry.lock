@@ -247,6 +247,18 @@ files = [
 cli = ["click (>=5.0)"]
 
 [[package]]
+name = "pytz"
+version = "2022.7.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytz-2022.7.1-py2.py3-none-any.whl", hash = "sha256:78f4f37d8198e0627c5f1143240bb0206b8691d8d7ac6d78fee88b78733f8c4a"},
+    {file = "pytz-2022.7.1.tar.gz", hash = "sha256:01a0681c4b9684a28304615eba55d1ab31ae00bf68ec157ec3708a8182dbbcd0"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
@@ -349,4 +361,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "e89b14639eaaf9c810dec8ba970586f1c2c10f15a7830eff6835ec0206b85896"
+content-hash = "c102a87c7916190cc4cb07fbd7190d8792d64408c243031e20b02280158afeda"
