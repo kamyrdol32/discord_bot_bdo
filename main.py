@@ -45,13 +45,13 @@ async def on_ready():
             #     await client.user.edit(avatar=avatar)
 
             # Discord Messega
-            if TimetoNext == 15 and nextBoss["Notification"] == True:
-                channel = client.get_channel(os.getenv('DISCORD_BOSSTIMER_CHANNEL'))
-
-                embedVar = discord.Embed(title="Boss Timer", description="", color=nextBoss["Color"])
-                embedVar.add_field(name="Kolejny boss", value=nextBoss["Name"], inline=True)
-                embedVar.add_field(name="Pozostały czas", value=str(TimetoNext) + " min", inline=True)
-                await channel.send(embed=embedVar)
+            # if TimetoNext == 15 and nextBoss["Notification"] == True:
+            #     channel = client.get_channel(os.getenv('DISCORD_BOSSTIMER_CHANNEL'))
+            #
+            #     embedVar = discord.Embed(title="Boss Timer", description="", color=nextBoss["Color"])
+            #     embedVar.add_field(name="Kolejny boss", value=nextBoss["Name"], inline=True)
+            #     embedVar.add_field(name="Pozostały czas", value=str(TimetoNext) + " min", inline=True)
+            #     await channel.send(embed=embedVar)
 
             if TimetoNext < 0:
                 nextBossID = nextBossID + 1
