@@ -70,9 +70,11 @@ BossTable = [
     {"ID": 3, "Day": 2, "Hour": 19, "Minute": 00, "Name": "Vell", "Notification": True, "Color": 0xff0000},
     {"ID": 4, "Day": 3, "Hour": 22, "Minute": 15, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
     {"ID": 5, "Day": 4, "Hour": 23, "Minute": 15, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
-    {"ID": 6, "Day": 6, "Hour": 17, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
-    {"ID": 7, "Day": 6, "Hour": 18, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
-    {"ID": 8, "Day": 6, "Hour": 19, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
+    {"ID": 6, "Day": 5, "Hour": 23, "Minute": 15, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
+    {"ID": 7, "Day": 6, "Hour": 16, "Minute": 00, "Name": "Vell", "Notification": True, "Color": 0xff0000},
+    {"ID": 8, "Day": 6, "Hour": 17, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
+    {"ID": 9, "Day": 6, "Hour": 18, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
+    {"ID": 10, "Day": 6, "Hour": 19, "Minute": 00, "Name": "Garmoth", "Notification": True, "Color": 0xff0000},
 ]
 timezone = pytz.timezone("Europe/Warsaw")
 
